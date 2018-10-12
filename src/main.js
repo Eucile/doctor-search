@@ -48,6 +48,7 @@ $(document).ready(function() {
         }
       });
       $('.doctor-list').empty();
+      $('.errors').empty();
     });
   });
 });

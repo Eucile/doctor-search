@@ -5,7 +5,7 @@
 
 ### Description
 
-A basic API call that returns a list of Portland-based doctors based on the user's search parameters. The list currently returns the first 10 indexed doctors that fall under the searched categories. 
+An API call that returns a list of Portland-based doctors based on the user's search parameters. The list currently returns the first 10 indexed doctors that fall under the searched categories.
 
 ## Specs
 
@@ -19,7 +19,7 @@ A basic API call that returns a list of Portland-based doctors based on the user
 
 2. The program will return an error message in the event of a failed or unhelpful api call.
   * Input: "I'm 80"
-  * Output: "Oopse! Something went wrong. Please try again...", or something.
+  * Output: "Oh no! Something went wrong. Please try again...", etc.
 
 
 ### Technologies and Resources

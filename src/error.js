@@ -2,8 +2,7 @@
 export class DoctorSearch {
   getDoctorBySearch(name) {
     return new Promise(function(resolve, reject) {
-      console.log(request);
-      let request = new XMLHttpRequest();    
+      let request = new XMLHttpRequest();
       let url = `https://api.betterdoctor.com/2016-03-01/doctors?query=${name}&location=or-portland&skip=0&limit=10&user_key=${process.env.exports.apiKey}`;
       request.onload = function() {
         if (this.status === 200) {
@@ -14,6 +13,7 @@ export class DoctorSearch {
       }
       request.open("GET", url, true);
       request.send();
+      console.log(request);
     });
   }
 }
