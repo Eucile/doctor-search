@@ -15,6 +15,9 @@ $(document).ready(function() {
         format: 'json'
       },
       success: function(response) {
+        if (response.data.length == 0) {
+          $('.errors').text('Sorry, there are currently no doctors in Portland that match that search.');
+        } else {
         response.data.map((doctor,index) => {
           if(index <= 9){
             let phoneNumber = doctor.practices[0].phones[0].number;
@@ -31,9 +34,10 @@ $(document).ready(function() {
               "<p>Website: " + website + "</p>" +
               "<p>Address: " + address + "</p></div>"
             );
-            }
-          });
-      },
+          }
+        });
+      }
+    },
       error: function() {
         $('#errors').append("There was an error processing your request. Please try again.");
       }
