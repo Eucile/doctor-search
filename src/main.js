@@ -33,7 +33,7 @@ $(document).ready(function() {
                 let address = response.data[0].practices[0].visit_address.street  +  ", " +  response.data[0].practices[0].visit_address.city + ", " + response.data[0].practices[0].visit_address.state + " " +  response.data[0].practices[0].visit_address.zip;
                 $('.doctor-list').append(
                   "<div><img src='" + picture + "'></div>" +
-                  "<div><p><strong>First Name:</strong> " + fullName + "</p>" +
+                  "<div><p><strong>Name:</strong> " + fullName + "</p>" +
                   "<p><strong>Phone number: </strong>" + phoneNumber + "</p>" +
                   "<p><strong>Accepting new patients: </strong>" + newPatients + "</p>" +
                   "<p><strong>Website: </strong>" + website + "</p>" +
@@ -47,6 +47,7 @@ $(document).ready(function() {
           $('.errors').text("There was an error processing your request. Please try again.");
         }
       });
+      $('.doctor-list').empty();
     });
   });
 });

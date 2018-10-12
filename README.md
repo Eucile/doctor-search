@@ -1,11 +1,11 @@
-## API
+## A Better Doctor API
 
-#### by Krystal Foster
+#### application to practice API calls by Krystal Foster
 #### Oct. 12, 2018
 
 ### Description
 
-
+A basic API call that returns a list of Portland-based doctors based on the user's search parameters. The list currently returns the first 10 indexed doctors that fall under the searched categories. 
 
 ## Specs
 
@@ -36,15 +36,13 @@
 
 ### Setup Instructions
 
-First, make sure you have node package manager installed. Check out https://www.npmjs.com/get-npm for information on that. Also make sure you have karma installed globally:
-
-`$ npm install -g karma-cli`
+First, make sure you have node package manager installed. Check out https://www.npmjs.com/get-npm for information on that.
 
 #### Then:
 
-`$ git clone https://github.com/Eucile/galactic-calculator-test`
+`$ git clone https://github.com/Eucile/doctor-search`
 
-`$ cd galactic-calculator-test`
+`$ cd doctor-search`
 
 `$ npm install`
 
@@ -52,10 +50,6 @@ First, make sure you have node package manager installed. Check out https://www.
 
 `$ npm run start`
 
-
-#### To run Karma:
-
-`$ npm test`
 
 ### License
 
