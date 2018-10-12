@@ -9,8 +9,8 @@
 
 ## Specs
 
-1. The program will return a list of Portland-based doctors based on symptomatic search.
-  * Input: "fever"
+1. The program will return a list of Portland-based doctors based on specialty search.
+  * Input: "pediatrician"
   * Output: [List of PDX doctors who match this query]
 
 2. The program will return a list of Portland-based doctors who match any name specified in the user query.

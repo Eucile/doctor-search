@@ -35,7 +35,25 @@ $(document).ready(function() {
         format: 'json'
       },
       success: function(response) {
-        $('.doctor-info').text(response.data[0].profile.first_name);
+        $('.doctor-info').text(response.data[0].profile.first_name + " " + response.data[0].profile.last_name);
+      },
+      error: function() {
+        $('#errors').text("There was an error processing your request. Please try again.");
+      }
+    });
+  });
+
+  $('#name-form').submit(function() {
+    event.preventDefault();
+    let name = $('#name-input').val();
+    $.ajax({
+      url: `https://api.betterdoctor.com/2016-03-01/doctors?query=${name}&location=or-portland&skip=0&limit=10&user_key=${process.env.exports.apiKey}`,
+      type: 'GET',
+      data: {
+        format: 'json'
+      },
+      success: function(response) {
+        $('.doctor-info').text(response.data[0].profile.first_name + " " + response.data[0].profile.last_name);
       },
       error: function() {
         $('#errors').text("There was an error processing your request. Please try again.");
