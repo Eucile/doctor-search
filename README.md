@@ -49,12 +49,14 @@ First, make sure you have node package manager installed. Check out https://www.
 `$ npm init -y`
 
 #### Next, create a .env file
-#### grab an api key from https://developer.betterdoctor.com/.
+
+#### Grab an api key from https://developer.betterdoctor.com/.
+
 #### Store the key as:
 
 exports.apiKey=[APIKEYGOESHERE]
 
-#### Then:
+#### Finally:
 
 `$ npm run start`
 

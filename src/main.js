@@ -2,7 +2,6 @@ import { DoctorSearch } from './error.js';
 import $ from 'jquery';
 import './styles.css';
 
-
 $(document).ready(function() {
   let doctorQuery = new DoctorSearch();
   let promise = doctorQuery.getDoctorBySearch(name);

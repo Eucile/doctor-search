@@ -1,4 +1,3 @@
-
 export class DoctorSearch {
   getDoctorBySearch(name) {
     return new Promise(function(resolve, reject) {
