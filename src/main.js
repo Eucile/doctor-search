@@ -1,8 +1,17 @@
+import { DoctorSearch } from './error.js';
 import $ from 'jquery';
 import './styles.css';
 
 
 $(document).ready(function() {
+
+
+  let doctorQuery = new DoctorSearch();
+  let promise = doctorQuery.getDoctorBySearch(name);
+
+    promise.then(function(response) {
+      let body = JSON.parse(response);
+
 
   $('#name-form').submit(function() {
     event.preventDefault();
@@ -39,9 +48,9 @@ $(document).ready(function() {
       }
     },
       error: function() {
-        $('#errors').append("There was an error processing your request. Please try again.");
+        $('.errors').append("There was an error processing your request. Please try again.");
       }
     });
   });
-
+});
 });
