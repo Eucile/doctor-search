@@ -3,9 +3,13 @@
   justify-content: center;
   flex-wrap: wrap;
   flex-flow: column;
-  width: 50%;
+  width: 100%;
 }
 
-.doctor-list img {
-  width: 20%;
+.doctor-list p {
+  text-align: center;
+}
+
+div {
+  margin: 0 auto;
 }
