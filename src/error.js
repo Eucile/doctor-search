@@ -13,7 +13,6 @@ export class DoctorSearch {
       }
       request.open("GET", url, true);
       request.send();
-      console.log(request);
     });
   }
 }
