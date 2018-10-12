@@ -1,0 +1,11 @@
+.doctor-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-flow: column;
+  width: 50%;
+}
+
+.doctor-list img {
+  width: 20%;
+}
