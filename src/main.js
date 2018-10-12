@@ -36,6 +36,7 @@ $(document).ready(function() {
       },
       success: function(response) {
         $('.doctor-info').text(response.data[0].profile.first_name + " " + response.data[0].profile.last_name);
+        $('.phone-number').text(response.data[0].practices[0].phones[0].number);
       },
       error: function() {
         $('#errors').text("There was an error processing your request. Please try again.");
@@ -54,6 +55,7 @@ $(document).ready(function() {
       },
       success: function(response) {
         $('.doctor-info').text(response.data[0].profile.first_name + " " + response.data[0].profile.last_name);
+        $('.phone-number').text(response.data[0].practices[0].phones[0].number);
       },
       error: function() {
         $('#errors').text("There was an error processing your request. Please try again.");
