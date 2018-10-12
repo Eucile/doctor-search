@@ -7,6 +7,7 @@ $(document).ready(function() {
   $('#name-form').submit(function() {
     event.preventDefault();
     let name = $('#name-input').val();
+    $('#name-input').val('');
     $.ajax({
       url: `https://api.betterdoctor.com/2016-03-01/doctors?query=${name}&location=or-portland&skip=0&limit=10&user_key=${process.env.exports.apiKey}`,
       type: 'GET',
@@ -14,7 +15,6 @@ $(document).ready(function() {
         format: 'json'
       },
       success: function(response) {
-        console.log(response.data);
         response.data.map((doctor,index) => {
           if(index <= 9){
             let phoneNumber = doctor.practices[0].phones[0].number;
