@@ -7,7 +7,6 @@
 
 
 
-
 ## Specs
 
 1. The program will return a list of Portland-based doctors based on symptomatic search.
