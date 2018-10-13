@@ -4,7 +4,7 @@ body {
 }
 
 strong {
-  font-size: 1.1em;
+  font-size: 1.05em;
 }
 
 .hook {
@@ -14,7 +14,6 @@ strong {
   color: 	#C8C8C8;
   font-family: 'Lato', sans-serif;
 }
-
 
 .form {
   font-family: 'Lato', sans-serif;
@@ -38,7 +37,6 @@ input {
 
 button {
   display: block;
-  font-weight: bold;
   font-size: .8em;
   margin-top: 1em;
   padding: .5em;
@@ -60,11 +58,13 @@ button {
 }
 
 .doctor-list div {
-  border: solid 1px	#E0E0E0;
+  border: solid 1px #F0F0F0;
   overflow: scroll;
+  border-radius: 1px;
   padding: 1em;
-  margin: .7em;
+  margin: .6em;
   width: 14em;
+  box-shadow: 0px 3px 20px rgba(0,0,0,0.1);
 }
 .doctor-list img {
   width: 70%;
