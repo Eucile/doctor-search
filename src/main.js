@@ -8,12 +8,12 @@ $(document).ready(function() {
   promise.then(function(response) {
     let body = JSON.parse(response);
 
-    $('#name-form').submit(function() {
+    $('#search-form').submit(function() {
       event.preventDefault();
-      let name = $('#name-input').val();
-      $('#name-input').val('');
+      let search = $('#search-input').val();
+      $('#search-input').val('');
       $.ajax({
-        url: `https://api.betterdoctor.com/2016-03-01/doctors?query=${name}&location=or-portland&skip=0&limit=10&user_key=${process.env.exports.apiKey}`,
+        url: `https://api.betterdoctor.com/2016-03-01/doctors?query=${search}&location=or-portland&skip=0&limit=10&user_key=${process.env.exports.apiKey}`,
         type: 'GET',
         data: {
           format: 'json'
@@ -35,7 +35,7 @@ $(document).ready(function() {
                   "<p><strong>Name:</strong> " + fullName + "</p>" +
                   "<p><strong>Phone number: </strong>" + phoneNumber + "</p>" +
                   "<p><strong>Accepting new patients: </strong>" + newPatients + "</p>" +
-                  "<p><strong>Website: </strong>" + website + "</p>" +
+                  "<p class='web'><strong>Website: </strong>" + website + "</p>" +
                   "<p><strong>Address: </strong>" + address + "</p></div>"
                 );
               }

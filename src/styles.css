@@ -48,7 +48,9 @@ button {
   background: #C8C8C8;
   color: white;
 }
-
+.web {
+  max-width: 100%;
+}
 .doctor-list {
   display: flex;
   justify-content: center;
@@ -59,8 +61,10 @@ button {
 
 .doctor-list div {
   border: solid 1px	#E0E0E0;
+  overflow: scroll;
   padding: 1em;
   margin: .7em;
+  width: 14em;
 }
 .doctor-list img {
   width: 70%;
