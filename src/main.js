@@ -29,10 +29,10 @@ $(document).ready(function() {
                 let picture = doctor.profile.image_url;
                 let website = doctor.practices[0].website;
                 let fullName = doctor.profile.first_name + " " + doctor.profile.last_name;
-                let address = response.data[0].practices[0].visit_address.street  +  ", " +  response.data[0].practices[0].visit_address.city + ", " + response.data[0].practices[0].visit_address.state + " " +  response.data[0].practices[0].visit_address.zip;
+                let address = response.data[0].practices[0].visit_address.street  +  ",<br> " +  response.data[0].practices[0].visit_address.city + ", " + response.data[0].practices[0].visit_address.state + " <br>" +  response.data[0].practices[0].visit_address.zip;
                 $('.doctor-list').append(
-                  "<div><img src='" + picture + "'></div>" +
-                  "<div><p><strong>Name:</strong> " + fullName + "</p>" +
+                  "<div><img src='" + picture + "'>" +
+                  "<p><strong>Name:</strong> " + fullName + "</p>" +
                   "<p><strong>Phone number: </strong>" + phoneNumber + "</p>" +
                   "<p><strong>Accepting new patients: </strong>" + newPatients + "</p>" +
                   "<p><strong>Website: </strong>" + website + "</p>" +

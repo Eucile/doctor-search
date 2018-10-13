@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
   <title>PDX Doctor Search</title>
 </head>
 <body>
+  <div class="logo">
+    <img src="./img/logo.png">
+  </div>
+  <div class="form">
     <form id="name-form">
-      <label for="name-input">What are you looking for?<br> Please enter a specialty such as 'pediatrician' or 'therapist.' <br>Or search your doctor by name:'</label><br>
-      <input type="text" id="name-input" placeholder="Search...">
-      <button id ="name-btn" type="submit"> Search doctors...</button>
+      <label for="name-input"><span class="hook">Who are you looking for?</span> Please enter a specialty such as '<em>pediatrician</em>' or '<em>therapist.</em>' <br>(Or search your doctor by name.)</label>
+      <input type="text" id="name-input" placeholder="search . . .">
+      <button id ="name-btn" type="submit">SUBMIT</button>
     </form>
-    <div class="doctor-list">
-    </div>
-    <div class="errors">
-    </div>
+  </div>
+  <div class="doctor-list">
+  </div>
+  <div class="errors">
+  </div>
 </body>
 </html>
