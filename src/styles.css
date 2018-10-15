@@ -46,9 +46,9 @@ button {
   background: #C8C8C8;
   color: white;
 }
-.web {
+/* .web {
   max-width: 100%;
-}
+} */
 .doctor-list {
   display: flex;
   justify-content: center;
