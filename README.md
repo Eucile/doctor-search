@@ -5,11 +5,11 @@
 
 ### Description
 
-An API call that returns a list of Portland-based doctors based on the user's search parameters. The list currently returns the first 10 indexed doctors that fall under the searched categories.
+An API call that returns a list of Portland-based doctors based on the user's search parameters. The list currently returns the first 30 indexed doctors that fall under the searched categories.
 
 ## Specs
 
-1. The program will return a list of Portland-based doctors based on specialty search.
+1. The program will return a list of Portland-based doctors based on user search.
   * Input: "pediatrician"
   * Output: [List of PDX doctors who match this query]
 
@@ -17,9 +17,13 @@ An API call that returns a list of Portland-based doctors based on the user's se
   * Input: "Robert"
   * Output: "Robert Hanson, Robert Bly...", etc.
 
-2. The program will return an error message in the event of a failed or unhelpful api call.
-  * Input: "I'm 80"
-  * Output: "Oh no! Something went wrong. Please try again...", etc.
+3. The program will return an error message in the event of a failed 200 status.
+    * Input: "nutrition"
+    * Output: "There was an error processing your request."
+
+4. The program will return an error message in the event of an empty api return.
+      * Input: "lovesick"
+      * Output: "Sorry, there are currently no doctors in Portland that match that search."
 
 
 ### Technologies and Resources
@@ -45,8 +49,6 @@ First, make sure you have node package manager installed. Check out https://www.
 `$ cd doctor-search`
 
 `$ npm install`
-
-`$ npm init -y`
 
 #### Next, create a .env file
 
