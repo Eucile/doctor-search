@@ -30,5 +30,7 @@ $(document).ready(function() {
     event.preventDefault();
     let doctorQuery = new DoctorSearch();
     doctorQuery.getDoctorBySearch($('#search-input').val(), formatDoctors);
+    $('.doctor-list').empty();
+    $('.errors').empty();
   });
 });
